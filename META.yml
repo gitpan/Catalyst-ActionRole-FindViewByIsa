@@ -3,7 +3,7 @@ abstract: 'Select from the available application views by type'
 author:
   - 'Tomas Doran (t0m), C<< <bobtfish@bobtfish.net> >>'
 build_requires:
-  Catalyst::Action::Renderview: 0
+  Catalyst::Action::RenderView: 0
   Catalyst::Controller::ActionRole: 0
   Catalyst::Runtime: 5.80
   ExtUtils::MakeMaker: 6.42
@@ -23,4 +23,5 @@ no_index:
     - t
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.000001
+  repository: http://github.com/bobtfish/catalyst-actionrole-findviewbyisa
+version: 0.000002

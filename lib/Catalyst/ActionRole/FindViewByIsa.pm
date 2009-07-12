@@ -3,7 +3,7 @@ use Moose::Role;
 use List::MoreUtils qw/uniq/;
 use namespace::autoclean;
 
-our $VERSION = '0.000001';
+our $VERSION = '0.000002';
 
 sub BUILD { }
 
@@ -41,7 +41,7 @@ Catalyst::ActionRole::FindViewByIsa - Select from the available application view
 
     BEGIN { extends 'Catalyst::Controller::ActionRole'; }
 
-    sub foo : Local Does('FindViewByIse') FindViewByIsa('Catalyst::View::TT') {
+    sub foo : Local Does('FindViewByIsa') FindViewByIsa('Catalyst::View::TT') {
         # Code here. If $c->stash->{current_view} is set, it will be left alone
         #            after this method is run. Otherwise it will be set to
         #            the first app view which @ISA Catalyst::View::TT
